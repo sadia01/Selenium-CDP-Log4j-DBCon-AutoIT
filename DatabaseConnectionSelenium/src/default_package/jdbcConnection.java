@@ -18,7 +18,7 @@ public class jdbcConnection {
 
 		String port= "3306";
 
-		Connection con=DriverManager.getConnection("jdbc:mysql://" + host + ":" + port + "/demo", "root", "sadia123");
+		Connection con=DriverManager.getConnection("jdbc:mysql://" + host + ":" + port + "/demo", "root", "");
 		Statement s=con.createStatement();
 
 		ResultSet rs=s.executeQuery("select * from credentials where scenario ='shoppingcard'");
